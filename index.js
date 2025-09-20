@@ -13,3 +13,9 @@ function incrementAwayScore(value) {
     awayScoreEl.textContent = awayScore
 }
 
+function resetScore() {
+    homeScore = 0
+    awayScore = 0
+    homeScoreEl.textContent = homeScore
+    awayScoreEl.textContent = awayScore
+}

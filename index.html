@@ -4,28 +4,31 @@
     </head>
     <body>
         <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <div class="board">
-                    <span class="score" id="home-score">0</span>
+            <div id="scoreboards">
+                <div>
+                    <h3>HOME</h3>
+                    <div class="board">
+                        <span class="score" id="home-score">0</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="button" onclick="incrementHomeScore(1)">+1</button>
+                        <button class="button" onclick="incrementHomeScore(2)">+2</button>
+                        <button class="button" onclick="incrementHomeScore(3)">+3</button>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <button class="button" onclick="incrementHomeScore(1)">+1</button>
-                    <button class="button" onclick="incrementHomeScore(2)">+2</button>
-                    <button class="button" onclick="incrementHomeScore(3)">+3</button>
+                <div>
+                    <h3>GUEST</h3>
+                    <div class="board">
+                        <span class="score" id="away-score">0</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="button" onclick="incrementAwayScore(1)">+1</button>
+                        <button class="button" onclick="incrementAwayScore(2)">+2</button>
+                        <button class="button" onclick="incrementAwayScore(3)">+3</button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
-                <div class="board">
-                    <span class="score" id="away-score">0</span>
-                </div>
-                <div class="buttons">
-                    <button class="button" onclick="incrementAwayScore(1)">+1</button>
-                    <button class="button" onclick="incrementAwayScore(2)">+2</button>
-                    <button class="button" onclick="incrementAwayScore(3)">+3</button>
-                </div>
-            </div>
+            <button class="button" id="new-game-button" onclick="resetScore()">New Game</button>
         </div>
         <script src="index.js"></script>
     </body>
