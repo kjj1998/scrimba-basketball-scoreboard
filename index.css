@@ -36,11 +36,12 @@ h3 {
 .board {
     background-color: #080001;
     border-radius: 5px;
-    width: 155px;
+    width: 149px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #080001;
 }
 
 .score {
@@ -48,6 +49,13 @@ h3 {
     font-size: 90px;
     color: red;
     font-family: "Cursed Timer ULiL Font", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    margin-top: 25px;
 }
 
 .button {
@@ -59,13 +67,6 @@ h3 {
     background: transparent;
     border-radius: 5px;
     padding: 0px 9px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 155px;
-    margin-top: 25px;
 }
 
 #new-game-button {
