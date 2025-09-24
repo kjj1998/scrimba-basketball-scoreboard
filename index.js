@@ -25,6 +25,11 @@ function resetScore() {
     highlightLeader()
 }
 
+// Make functions globally available
+window.incrementHomeScore = incrementHomeScore
+window.incrementAwayScore = incrementAwayScore
+window.resetScore = resetScore
+
 function highlightLeader() {
     homeBoardEl.style.border = '3px solid #080001';
     awayBoardEl.style.border = '3px solid #080001';
